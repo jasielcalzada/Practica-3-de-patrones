@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #6b6b6b;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.hero {
+  position: relative;
+  height: 60vh;
+  z-index: -2;
+  background: url("http://yucatan.com.mx/wp-content/uploads/2016/06/2-13.jpg") center top/cover no-repeat;
+}
+.overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.main-content {
+  background: #f2f2f2;
+}
+section {
+  background: #fff;
+  padding: 4rem 0 7rem;
+}
+section:nth-child(even) {
+  background: #f5f5f5;
+}
+h2,
+h3 {
+  padding: 2rem 0 0.75rem;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+/* ===================================== */
+/* ===== THE INTERESTING STUFF NOW ===== */
+/* ===================================== */
+.navbar {
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+/* --- navbar sizes --- */
+/* --- navbar colors --- */
+}
+.navbar-brand {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #4b4b4b;
+}
+.navbar--size--xl {
+  padding: 4rem 0;
+}
+.navbar--size--lg {
+  padding: 2rem 0;
+}
+.navbar--size--md {
+  padding: 1rem 0;
+}
+.navbar--size--sm {
+  padding: 0;
+}
+.navbar--color--white {
+  background: #fff;
+}
+.navbar--color--primary {
+  background: #37ca7e;
+}
+.navbar--color--secondary {
+  background: #43a6dd;
+}
+.navbar--color--ghost {
+  background: rgba(0,0,0,0.2);
+}
+.navbar--color--ghost .navbar-brand,
+.navbar--color--ghost .navbar-text,
+.navbar--color--ghost a {
+  color: #fff;
+}
+
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);
+
+*
+{
+  font-family: 'RobotoDraft', sans-serif;
+  font-size: 17px;
+}
+
+.material_block
+{
+  max-width: 325px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.4);
+  margin: 10% auto;
+}
+
+.material_input
+{
+  position: relative;
+  margin-bottom:45px;
+  margin-top: 12px;
+}
+
+input
+{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #3f51b5;
+  border-radius: 0px;
+}
+
+input:focus
+{
+  outline:none;
+}
+
+label
+{
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label
+{
+  font-size:14px;
+  color:#3f51b5;
+}
+
+.bar
+{
+  position:relative;
+  display:block;
+  width:315px;
+}
+
+.bar:before, .bar:after
+{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#3f51b5;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+.bar:before
+{
+  left:50%;
+}
+
+.bar:after
+{
+  right:50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after
+{
+  width:50%;
+}
+
+.highlight
+{
+  position:absolute;
+  height:60%;
+  width:325px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+input:focus ~ .highlight
+{
+  -webkit-animation:inputlighter 0.3s ease;
+  -moz-animation:inputlighter 0.3s ease;
+  animation:inputlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputlighter
+{
+	from
+  {
+    background:#3f51b5;
+  }
+  to
+  {
+    width:0; background:transparent;
+  }
+}
+
+@-moz-keyframes inputlighter
+{
+	from
+  {
+    background:#3f51b5;
+  }
+  to
+  {
+   width:0; background:transparent;
+  }
+}
+@keyframes inputlighter
+{
+	from
+  {
+    background:#3f51b5;
+  }
+  to
+  {
+    width:0; background:transparent;
+  }
+}
