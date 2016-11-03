@@ -1,0 +1,35 @@
+#barra  {
+      background-color: skyblue;
+      color:pink;
+
+  }
+.navbar-nav  li a:hover {
+      color: white !important;
+  }
+body{
+	background-color: white;
+}
+
+.bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: skyblue; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+      text-align: center;
+  }
+ 
+
+
+
+  
+  

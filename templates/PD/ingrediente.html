@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form  method="POST" action="#">
+		{% csrf_token %}
+		<h3>Ingresa el nombre de la ingredientes ala reseta</h3>
+
+		<input id="a" type="text" class="validate" name="ingrediente">
+
+		<div class="input-field col s12">
+		    <select name="reseta">
+		      <option value="" disabled selected>Choose your option</option>
+		      {% for item in resetas %}
+		      	<option value="{{item.nombre}}">{{item.nombre}}</option>
+		      {% endfor %}
+		    </select>
+		    <label>Materialize Select</label>
+		</div>
+
+		<input type="submit"  class="btn btn-primary" value="Add">
+
+	</form>
+</body>
+</html>
