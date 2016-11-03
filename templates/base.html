@@ -9,8 +9,7 @@
 <html>
 <head>
 	<title></title>
-</head>
-<nav data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl">
+  <nav data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl">
   <div class="container">
     <div class="navbar-header">
       <button type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Recetario</a>
@@ -28,10 +27,14 @@
     </div>
   </div>
 </nav>
+</head>
 <!-- some content to allow scrolling :)-->
+<body>
 <div class="hero">
   <div class="overlay"></div>
 </div>
 </body>
 </html>
-<body>
+{% block content %}
+{% endblock %}
+

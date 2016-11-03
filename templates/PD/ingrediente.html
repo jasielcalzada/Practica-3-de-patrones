@@ -1,12 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %}-
 {% load staticfiles %}
 {% block content %}
+<center>
 	<form  method="POST" action="#">
 		{% csrf_token %}
 		<h3>Ingresa el nombre de la ingredientes a la receta</h3>
 
 		<input id="a" type="text" class="validate" name="ingrediente">
-
+		<br>
 		<div class="input-field col s12">
 		    <select name="reseta">
 		      <option value="" disabled selected>Ingrese la receta</option>
@@ -16,8 +17,9 @@
 		    </select>
 		    <label>Materialize Select</label>
 		</div>
-
+		<br>
 		<input type="submit"  class="btn btn-primary" value="Add">
 
 	</form>
+</center>
 {% endblock %}
